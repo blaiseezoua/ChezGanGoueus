@@ -1,0 +1,97 @@
+/*
+*   Social Login
+*/
+
+// Local vars
+
+@social-login_button-width: 270px;
+@social-login_button-border-radius: 2px;
+@social-login_button-padding: 5px 6px;
+@social-login_button-font-size: 14px;
+@social-login_icon-font-size: 18px;
+@social-login_line-height: 40px;
+
+@social-login_button-color: #ffffff;
+@social-login_facebook-bg: #3b5999;
+@social-login_twitter-bg: #00b6f1;
+@social-login_instagram-bg: #7c4e3a;
+@social-login_gplus-bg: #e04a39;
+
+& when (@media-target = 'mobile'){
+// Main Styles
+    .block-social-login {
+        ul {
+            margin: 20px 0 0;
+            padding: 0;
+            list-style: none;
+
+            li {
+                margin-bottom: 8px;
+
+                a {
+                    display: inline-block;
+                    text-decoration: none;
+                    overflow: hidden;
+                    position: relative;
+                    transition: 0.2s;
+                    box-sizing: border-box;
+                    font-size: @social-login_button-font-size;
+                    line-height: @social-login_line-height;
+                    color: @social-login_button-color;
+                    border-radius: @social-login_button-border-radius;
+                    min-width: @social-login_button-width;
+                    padding: @social-login_button-padding;
+                    &:hover {
+                        opacity: .8;
+                        &::after {
+                            left: 120%;
+                            transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+                        }
+                    }
+
+                    i.fa {
+                        font-style: normal;
+                        display: inline-block;
+                        width: 43px;
+                        text-align: center;
+                        border-right: solid 1px;
+                        border-right-color: rgba(255, 255, 255 , 0.1);
+                        font-size: @social-login_icon-font-size;
+                        line-height: @social-login_line-height;
+                    }
+
+                    &.facebook {
+                        background: @social-login_facebook-bg;
+                    }
+                    &.twitter {
+                        background: @social-login_twitter-bg;
+                    }
+                    &.instagram {
+                        background: @social-login_instagram-bg;
+                    }
+                    &.google-plus {
+                        background: @social-login_gplus-bg;
+                    }
+
+                    .label {
+                        padding-left: 25px;
+                    }
+
+                    &::after {
+                        background: #fff;
+                        content: "";
+                        height: 155px;
+                        left: -75px;
+                        opacity: .2;
+                        position: absolute;
+                        top: -50px;
+                        transform: rotate(35deg);
+                        transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+                        width: 50px;
+                        z-index: 10;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,35 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <virtualType name="Zemez\SocialLogin\Model\Provider\Config\Reader" type="Magento\Framework\Config\Reader\Filesystem">
+        <arguments>
+            <argument name="converter" xsi:type="object">Zemez\SocialLogin\Model\Provider\Config\Converter</argument>
+            <argument name="schemaLocator" xsi:type="object">Zemez\SocialLogin\Model\Provider\Config\SchemaLocator</argument>
+            <argument name="fileName" xsi:type="string">social_providers.xml</argument>
+        </arguments>
+    </virtualType>
+    <virtualType name="Zemez\SocialLogin\Block\Adminhtml\System\Config\Field\RedirectUri\Google" type="Zemez\SocialLogin\Block\Adminhtml\System\Config\Field\RedirectUri">
+        <arguments>
+            <argument name="provider" xsi:type="string">google</argument>
+        </arguments>
+    </virtualType>
+    <virtualType name="Zemez\SocialLogin\Block\Adminhtml\System\Config\Field\RedirectUri\Twitter" type="Zemez\SocialLogin\Block\Adminhtml\System\Config\Field\RedirectUri">
+        <arguments>
+            <argument name="provider" xsi:type="string">twitter</argument>
+        </arguments>
+    </virtualType>
+    <type name="Zemez\SocialLogin\Model\ResourceModel\Provider\Collection">
+        <arguments>
+            <argument name="reader" xsi:type="object">Zemez\SocialLogin\Model\Provider\Config\Reader</argument>
+        </arguments>
+    </type>
+    <type name="Magento\Checkout\Model\CompositeConfigProvider">
+        <arguments>
+            <argument name="configProviders" xsi:type="array">
+                <item name="checkout_social_login_config_provider" xsi:type="object">Zemez\SocialLogin\Model\Checkout\ConfigProvider</item>
+            </argument>
+        </arguments>
+    </type>
+    <type name="Magento\Checkout\Block\Cart\Sidebar">
+        <plugin name="social_login" type="Zemez\SocialLogin\Plugin\Checkout\Block\Cart\Sidebar" />
+    </type>
+</config>

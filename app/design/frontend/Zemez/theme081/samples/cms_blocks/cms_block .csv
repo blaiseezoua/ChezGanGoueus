@@ -1,0 +1,116 @@
+"block_id","title","identifier","content","creation_time","update_time","is_active"
+"1","Footer column content 1","footer_col_1","<ul>
+    <li><a href=""{{store direct_url=""about-us""}}"">About Us</a></li>
+    <li><a href=""{{store direct_url=""customer-service""}}"">Customer Service</a></li>
+    <li><a href=""{{store url=""""}}template-settings"">Template Settings</a></li>
+</ul>
+
+","2016-03-12 03:30:44","2016-04-18 16:21:52","1"
+"4","Footer column content 2","footer_col_2","<div class=""footer-col"">
+    <h4>Why buy from us</h4>
+    <div class=""footer-col-content"">
+        <ul>
+            <li><a href=""{{store url=""""}}shipping-delivery"">Shipping & Delivery</a></li>
+            <li><a href=""{{store url=""""}}secure-payment"">Secure payment</a></li>
+            <li><a href=""{{store url=""""}}support"">Support</a></li>
+            <li><a href=""{{store url=""""}}guarantee"">Guarantee</a></li>
+            <li><a href=""{{store url=""""}}terms-conditions"">Terms & Conditions</a></li>
+        </ul>
+    </div>
+</div>","2016-03-12 03:33:05","2017-02-06 12:43:38","1"
+"7","Footer column content 3","footer_col_3","<div class=""footer-col"">
+    <h4>My account</h4>
+    <div class=""footer-col-content"">
+        <ul>
+            <li><a href=""{{store url='customer/account/login/'}}"">Sign In</a></li>
+            <li><a href=""{{store url='checkout/cart/'}}"">View Cart</a></li>
+            <li><a href=""{{store url='wishlist/'}}"">My Wishlist</a></li>
+            <li><a href=""{{store url=""""}}faq"">FAQ</a></li>
+        </ul>
+    </div>
+</div>
+","2016-03-12 03:35:20","2017-02-06 12:44:07","1"
+"10","Footer column 1 title","footer_col_1_title","<h4>Information</h4>","2017-08-16 05:31:35","2017-08-16 05:31:35","1"
+"11","Payment","payment_1","<ul class=""list-inline list-payment"">
+	<li><span class=""icon icon-xs fa fa-cc-visa""></span></li>
+	<li><span class=""icon icon-xs fa fa-cc-mastercard""></span></li>
+	<li><span class=""icon icon-xs fa fa-cc-paypal""></span></li>
+	<li><span class=""icon icon-xs fa fa-cc-discover""></span></li>
+	<li><span class=""icon icon-xs fa fa-cc-stripe""></span></li>
+</ul>","2017-08-16 05:32:02","2017-08-16 05:32:02","1"
+"12","Additional information","add-info","<div class=""add-info"">
+	<ul>
+		<li>
+			<span class=""add-info_title"">
+				<i class=""material-icons-local_phone""></i>
+				<a href=""tel:+3(800) 2345-6789"">+3(800) 2345-6789</a>
+			</span>
+			<p>Round-the-clock free hotline (24/7)</p>
+		</li>
+		<li>
+			<span class=""add-info_title"">
+				<i class=""material-icons-local_shipping""></i>
+				<span>Free Shipping</span>
+			</span>
+			<p>We provide you with fast and free delivery regardless of the product size and value.</p>
+		</li>
+		<li>
+			<span class=""add-info_title"">
+				<i class=""material-icons-thumb_up""></i>
+				<span>Satisfaction Guarantee</span>
+			</span>
+			<p>We are committed to your satisfaction with every order.</p>
+		</li>
+	</ul>
+</div>","2017-08-16 05:33:13","2017-08-16 05:33:13","1"
+"13","Mega menu banner","mm_ban","<div class=""mm_block-2"">
+	<div class=""mm_block-2_inner"">
+		<a href=""{{store url='childrens-books.html'}}"">
+			<img src=""{{view url='images/mm_ban-1.jpg'}}"" alt=""mm_ban_img"">
+			<div class=""mm_block-2_txt"">
+				<span>NEW<br>ARRIVALS</span>
+			</div>	
+		</a>	
+	</div>
+</div>","2017-08-18 04:55:52","2017-08-18 06:04:01","1"
+"14","Banners","banners","<div class=""bans-1"">
+	<div class=""bans-1_ban-1"">
+		<img src=""{{view url='images/ban-1.jpg'}}"" alt=""banner"" class=""bans-1_img bans_img"">
+		<div class=""bans-1_text-wrap"">
+			<span class=""bans-1_ban-1_sm ban_txt-sm"">Mystery, Thriller & Suspense</span>
+			<span class=""bans-1_ban-1_md ban_txt-md"">LOWER PRICED<br>THAN E-BOOKS</span>
+			<div class=""bans-1_ban-1_price ban_txt_price"">
+				<span>$</span>			
+				<span>19</span>
+				<span>99</span>	
+			</div>
+			<a href=""childrens-books.html"" class=""bans_link"">Shop Now</a>			
+		</div>
+	</div>	
+	<div class=""bans-1_ban-2"">
+		<img src=""{{view url='images/ban-2.jpg'}}"" alt=""banner"" class=""bans-1_img bans_img"">
+		<div class=""bans-1_text-wrap"">				
+			<span class=""bans-1_ban-2_txt-sm ban_txt-sm"">SPECIAL OFFER</span>
+			<span class=""bans-1_ban-2_txt-md ban_txt-md"">bestsellers</span>
+			<div class=""bans-1_ban-2_sp-price ban_sp-price"">
+				<span class=""ban_sp-price_l"">10</span>
+				<div class=""ban_sp-price_r"">
+					<span>%</span>
+					<span>off</span>
+				</div>
+			</div>
+			<a href=""childrens-books.html"" class=""bans_link"">Shop Now</a>
+		</div>
+	</div>
+</div>","2017-08-21 06:52:25","2017-08-21 09:06:48","1"
+"15","Banner","banner","<div class=""bans-2_wrap"">	
+	<div class=""bans-2"">
+		<img src=""{{view url='images/ban-3.jpg'}}"" alt=""banner"" class=""bans-2_img bans_img"">
+		<div class=""bans-2_text-wrap"">
+			<span class=""bans-2_ban-1_sm ban_txt-sm"">Save 25%</span>
+			<span class=""bans-2_ban-1_md ban_txt-md"">Shop this month’s<br>featured titles</span>
+			<a href=""literature-fiction.html"" class=""bans_link"">Shop Now</a>			
+		</div>
+	</div>	
+</div>","2017-08-21 11:42:17","2017-08-21 11:52:59","1"
+"16","AMP Footer Links","amp_footer_links","<ul><li><a href=""{{store url='about-us'}}"">About Us</a></li><li><a href=""{{store url='contact'}}"">Contact Us</a></li><li><a href=""{{store url='customer-service'}}"">Customer Service</a></li><li><a href=""{{store url='privacy-policy-cookie-restriction-mode'}}"">Privacy Policy</a></li><li><a href=""{{store url='template-settings'}}"">Templates Settings</a></li></ul>","2019-08-19 10:06:37","2019-08-19 10:06:37","1"

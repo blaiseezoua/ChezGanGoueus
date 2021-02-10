@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <update id="Zemez_Base::modules" title="Zemez" module="Zemez_Parallax" sortOrder="30" resource="Zemez_Base::modules" />
+        <add id="Zemez_Parallax::parallax" title="Parallax" module="Zemez_Parallax" sortOrder="30" resource="Zemez_Parallax::parallax" parent="Zemez_Base::modules" />
+        <add id="Zemez_Parallax::parallax_block" title="Parallax Block" module="Zemez_Parallax" sortOrder="30" resource="Zemez_Parallax::parallax_block" parent="Zemez_Parallax::parallax" action="parallax/block" />
+    </menu>
+</config>

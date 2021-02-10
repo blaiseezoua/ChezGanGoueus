@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Zemez_SocialLogin:etc/email_templates.xsd">
+    <provider id="google" label="Google+" class="Zemez\SocialLogin\Model\Provider\Google" />
+    <provider id="facebook" label="Facebook" class="Zemez\SocialLogin\Model\Provider\Facebook" />
+    <provider id="instagram" label="Instagram" class="Zemez\SocialLogin\Model\Provider\Instagram" />
+    <provider id="twitter" label="Twitter" class="Zemez\SocialLogin\Model\Provider\Twitter" />
+</config>

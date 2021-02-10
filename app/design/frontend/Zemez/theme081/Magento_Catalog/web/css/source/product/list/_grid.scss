@@ -1,0 +1,130 @@
+
+//
+//  Grid
+//  ---------------------------------------------
+
+.products-grid{
+    .product-items{
+        @include make-flex();
+        @include make-row();
+        @include flex-wrap(wrap);
+    }
+    .product-item{
+        @include make-col();
+        @include flex-basis(100%);
+        margin-bottom: $gutter-width;
+
+        @media (min-width: $screen-xs-min){
+            @include flex-basis(50%);
+        }
+        @media (min-width: $screen-md-min){
+            @include flex-basis(33.33%);
+        }
+
+        + .product-item{
+            @media (max-width: $screen-xs-min - 1){
+                border-top: 1px solid $border-color;
+                padding-top: $gutter-width;
+            }
+        }
+    }
+
+    .product-item_wrap-1{
+        @include make-flex;
+        @include justify-content(space-between);
+        @include align-items(center);
+
+        @media(max-width: $screen-lg-min - 1){
+            @include flex-wrap(wrap);
+        }
+
+        .product-item-name{
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            padding-right: 8px;
+        }
+
+        .price-box{
+            margin-bottom: 0;
+        }
+    }
+
+    //Image
+    .product-item .product-item-info{
+        .product-item-photo,
+        .gallery-placeholder{
+            margin-bottom: 16px;
+        }
+    }
+    .product-image-container{
+        display: inline-block;
+        max-width: 100%;
+        background: $bg-light;
+    }
+    .product-image-wrapper{
+        height: 0;
+        display: block;
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+    }
+    .product-image-photo{
+        text-align: center;
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        height: auto;
+        max-width: 100%;
+    }
+
+    //Reviews
+    .reviews-actions{
+        @include make-flex();
+        @include justify-content(space-between);
+        .action.add{
+            @include font-icon('\ea7a');
+            font-size: 0;
+            &:before{
+                font-size: $default-font-size;
+            }
+        }
+    }
+
+    //Price
+    .price-from{
+        margin-bottom: 0;
+    }
+
+    .price-to{
+        margin-bottom: 0;
+    }
+
+    // Description
+    .product-item-description{
+        margin-bottom: 12px;
+    }
+
+    // Actions
+    .actions-primary{
+        .action{
+            display: block;
+            width: 40px;
+            height: 40px;
+            border-radius: 0;
+            padding: 9px;
+        }
+
+        .action span{
+            display: none;
+        }
+    }
+
+    .product-item .product-item-actions{
+        @include justify-content(flex-start);
+    }
+}
